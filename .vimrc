@@ -288,6 +288,7 @@ filetype plugin indent on    " required
 
 Plugin 'The-NERD-Tree'
 Plugin 'taglist-plus'
+Plugin 'yous/vim-open-color'
 
 " }}}
 " =============================================================================
