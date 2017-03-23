@@ -1228,6 +1228,6 @@ set nu
 set cindent 
 set ruler 
 
-
+set enc=utf-8
 
 
