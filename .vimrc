@@ -164,7 +164,7 @@ Plug 'bkad/CamelCaseMotion'
 " Vim motions on speed!
 Plug 'easymotion/vim-easymotion'
 " Extended % matching
-Plug 'matchit.zip'
+Plug 'vim-scripts/matchit.zip'
 " Simplify the transition between multiline and single-line code
 Plug 'AndrewRadev/splitjoin.vim'
 " Easily delete, change and add surroundings in pairs
@@ -172,9 +172,9 @@ Plug 'tpope/vim-surround'
 " Pairs of handy bracket mappings
 Plug 'tpope/vim-unimpaired'
 " Produce increasing/decreasing columns of numbers, dates, or daynames
-Plug 'visincr'
+Plug 'vim-scripts/visincr'
 " Switch between source files and header files
-Plug 'a.vim'
+Plug 'vim-scripts/a.vim'
 " Enable repeating supported plugin maps with "."
 Plug 'tpope/vim-repeat'
 
@@ -213,7 +213,7 @@ Plug 'lervag/vimtex', { 'for': ['bib', 'tex'] }
 Plug 'godlygeek/tabular', { 'for': 'markdown' } |
 Plug 'plasticboy/vim-markdown', { 'for': 'markdown' }
 " PHP
-Plug 'php.vim-html-enhanced', { 'for': ['html', 'php'] }
+Plug 'vim-scripts/php.vim-html-enhanced', { 'for': ['html', 'php'] }
 " Racket
 Plug 'wlangstroth/vim-racket', { 'for': 'racket' }
 " smali
@@ -239,7 +239,7 @@ Plug 'ngmy/vim-rubocop', { 'on': 'RuboCop' }
 " Rails
 Plug 'tpope/vim-rails'
 " ANSI escape
-Plug 'AnsiEsc.vim', { 'for': 'railslog' }
+Plug 'vim-scripts/AnsiEsc.vim', { 'for': 'railslog' }
 " TomDoc
 Plug 'wellbredgrapefruit/tomdoc.vim', { 'for': 'ruby' }
 
@@ -287,8 +287,7 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 
 Plugin 'The-NERD-Tree'
-Plugin 'taglist-plus'
-Plugin 'yous/vim-open-color'
+"Plugin 'taglist-plus'
 
 " }}}
 " =============================================================================
@@ -338,7 +337,7 @@ set smartcase
 set list
 " Strings to use in 'list' mode and for the :list command
 try
-  set listchars=tab:>\ ,trail:Â·,extends:Â»,precedes:Â«,nbsp:+
+  set listchars=tab:>\ ,trail:·,extends:»,precedes:«,nbsp:+
 catch /^Vim\%((\a\+)\)\=:E474/
   set listchars=tab:>\ ,trail:_,extends:>,precedes:<,nbsp:+
 endtry
@@ -1227,7 +1226,6 @@ set nowrap
 set nu
 set cindent 
 set ruler 
-
-set enc=utf-8
+set encoding=utf-8
 
 
